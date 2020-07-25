@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+     <img src="../assets/logo.png" alt="Vue.js PWA">
     <h1>{{ msg }}</h1>
     <h2>Please Login</h2>
   </div>

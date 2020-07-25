@@ -1,17 +1,16 @@
 <template>
-  <div class="test">
-     <img src="../assets/logo.png" alt="Vue.js PWA">
+  <div class="hello">
+    <img src="../assets/funny.jpg" />
     <h1>{{ msg }}</h1>
-    
   </div>
 </template>
 
 <script>
 export default {
-  name: 'test',
+  name: 'hello',
   data () {
     return {
-      msg: 'This is a test msg'
+      msg: 'Whatever happens, dont forget to laugh'
     }
   }
 }

@@ -1,5 +1,6 @@
 <template>
   <div class="container-fluid mt-4">
+     <img src="../assets/logo.png" alt="Vue.js PWA">
     <h1 class="h1">Vue Notes</h1>
     <b-row>
       <b-col>

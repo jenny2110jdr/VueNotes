@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import VueNotes from '@/components/VueNotes'
+import Funny from '@/components/Funny'
 import Auth from '@okta/okta-vue'
 
 Vue.use(Auth, {
@@ -21,16 +22,24 @@ let router = new Router({
       component: Hello
     },
     {
-      path: '/callback',
-      component: Auth.handleCallback()
-    },
-    {
       path: '/notes',
       name: 'VueNotes',
       component: VueNotes,
       meta: {
-        requriesAuth: true
+        requiresAuth: true
       }
+    },
+    {
+      path: '/funny',
+      name: 'Funny',
+      component: Funny,
+      meta: {
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/callback',
+      component: Auth.handleCallback()
     }
   ]
 })

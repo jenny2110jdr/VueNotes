@@ -4,10 +4,12 @@
       <span>Vue.js VueNotes
         <b-button class="float-right" @click.prevent="login" v-if="!loggedInUser">Login</b-button>
         <b-button class="float-right" @click.prevent="logout" v-if="loggedInUser">Logout</b-button>
+        <b-button class="float-right" variant="success" v-if="loggedInUser" href="./funny"> Make me Laugh </b-button>
+        <b-button class="float-right" variant="primary" v-if="loggedInUser" href="./notes"> Go to Notes </b-button>
       </span>
     </header>
     <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
+     
       <router-view></router-view>
     </main>
   </div>
@@ -79,4 +81,5 @@ header span {
   box-sizing: border-box;
   padding-top: 16px;
 }
+
 </style>
